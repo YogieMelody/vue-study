@@ -1,0 +1,17 @@
+1.v-on绑定事件
+2.阻止事件传播
+  event.stopPrepagation()
+3.v-on = @
+4.v-on:click="func" = v-on:click="func()"
+5.传统js表单验证必须有一个明确的boolean类型的返回值，而且在应用验证方法时必须加上return + 方法名称
+  eg: onsubmit="return checkForm()"
+  vue.js通过由点(.)表示的指令后缀来调用修饰符
+  eg:.stop, .prevent, .capture, .self, .once
+  使用方式：v-on:submit.prevent = @submit.prevent；@mouseover.stop="func"
+6.v-text:为元素设置文本值
+  v-html:为元素设置html内容
+  v-bind:为html标签的属性赋值（使用vue的插值表达式无效，需要使用v-bind，v-bind可以用:代替
+7.vue-on的按键修饰符（按键别名）
+  eg:.enter, .tab, .delete, .esc, .space, .up, .down, .left, .right, .ctrl, .alt, .shift, .meta
+8.v-for遍历数组、对象，注意输出的索引和值的顺序，遍历的时候key在前，值在后
+  eg:v-for="(value,key) in item"   value是数据项的值，key是数据项的键
